@@ -1,0 +1,16 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <form method="post" action=".">
+        {% csrf_token %}
+        <h1>Welcome to ChatBoard</h1>
+        <p>This is just a chat example</p>
+        <p>Click here to <a class="home_page" href="/login">Login</a></p>
+    </form>
+</body>
+</html>
